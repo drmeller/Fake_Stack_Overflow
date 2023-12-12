@@ -10,7 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "*",
+    "bcryptjs": "^2.4.3",
+    "connect-mongo": "^5.1.0",
+    "cors": "^2.8.5",
     "express": "*",
+    "express-session": "^1.17.3",
     "mongoose": "*",
     "mysql": "*"
   }

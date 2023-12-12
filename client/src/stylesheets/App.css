@@ -1,1 +1,339 @@
 /* Add your CSS here */
+body{
+    overflow-y: hidden;
+}
+#header{
+    width: 100%;
+    height: 15%; 
+    background-color: lightgray;
+    border: 1px solid black;
+    display: flex;
+}
+#fsoTitle{
+    margin-left: 15%;
+}
+#search{
+    height: 30%;
+    margin-left: 17%;
+    margin-top: 3%;
+}
+#main{
+    height: 83%;
+    display: flex;
+}
+#menu{
+    border-right: black dotted;
+    width: 15%;
+    height: 85vh;
+}
+.menuOption{
+    width: 100%;
+    height: 5%;
+    text-align: center;
+    padding-top: 5%;
+    border-radius: 2px;
+    color: blue;
+}
+.menuOption:hover{
+    background-color: rgb(239, 238, 238);
+}
+.menuSelected{
+    background-color: lightgray;
+    width: 100%;
+    height: 5%;
+    text-align: center;
+    padding-top: 5%;
+    border-radius: 2px;
+    color: blue;
+}
+#questionsOption{
+    margin-top: 20%;
+}
+.page{
+    width: 85%;
+    height: 85vh;
+    overflow-y: hidden;
+}
+.scrollPage{
+    width: 85%;
+    height: 85vh;
+    overflow-y: auto;
+}
+
+#pageTop{
+    display: flex;
+    height: 10%
+}
+#pageTitle{
+    margin-left: 5%;
+    width: 50%;
+}
+.blueButton{
+    background-color: blue;
+    border: black 2px solid; 
+    color: white; 
+    height: 30px; 
+}
+#addQuestion{
+    margin-left: 30%; 
+    margin-top: 20px; 
+}
+#pageMiddle{
+    height: 10%;
+    display: flex;
+    border-bottom: black dotted; 
+}
+#numQuestions{
+    margin-left: 5%;
+    width: 10%;
+}
+.active{
+    margin-top: 2%;
+    height: 20px;
+    border-left: none;
+    background-color: black;
+    color: white;
+}
+.inactive{
+    margin-top: 2%;
+    height: 20px;
+    border-left: none;
+    background-color: white;
+    color: black;
+}
+#newest{
+    margin-left: 50%; 
+    border-left: black solid;
+}
+#noQuestionsFound{
+    display: none;
+    margin-left: 5%;
+}
+
+.questionBox{
+    border-bottom: black dotted;
+    height: 150px
+}
+#questionBoxes{
+    overflow-y: auto;
+}
+
+.QBtop{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+.QBbottom{
+    height: 50%;
+    width: 100%;
+}
+.QBtopLeft{
+    height: 100%;
+    width: 15%;
+    color: rgb(100,100,100);
+}
+.answerCount{
+    margin-left: 5%;
+}
+.viewCount{
+    display: block;
+    margin-left: 5%;
+}
+.questionTitle{
+    color: blue;
+    width: 50%;
+    font-size: 20px;
+}
+.questionSummary{
+    color:gray;
+    font-size: 15px;
+}
+.QBtopRight{
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.tagBoxes{
+    display: flex;
+    height: 50%;
+    margin-left: 15%;
+    margin-top: 5px;
+}
+.tagBox{
+    margin-left: 5px;
+    background-color: gray;
+    color: white;
+    border: black solid 1px;
+    border-radius: 10px;
+    padding: 10px;
+}
+#questionForm{
+    padding-left: 5%;
+}
+#answerForm{
+    padding-left: 5%;
+}
+
+.qInput{
+    width: 90%;
+}
+.aInput{
+    width: 90%;
+}
+.qError{
+    color: red;
+    display: none;
+}
+#answerPage{
+    display: flex;
+    flex-direction: column;
+}
+#answerPageTop{
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+#numAnswers{
+    margin-left: 5%;
+    width: 10%;
+}
+#titleOfQuestion{
+    margin-left: 5%;
+    width: 50%;
+}
+#askQuestion2{
+    margin-top: 5px;
+    margin-left: 20%;
+}
+#answerPageMiddle{
+    width: 100%;
+    display: flex;
+}
+#answerPageUnder{
+    display: flex;
+}
+#questionVotes{
+    margin-left: 50%;
+    margin-bottom: 10px;
+    width: 100px
+}
+.answerVotes{
+    width: 10%
+}
+#numViews{
+    margin-left: 50%;
+    width: 100px;
+    margin-bottom: 10px;
+}
+#textOfQuestion{
+    margin-left: 5%;
+    width: 60%;
+}
+#questionData{
+    margin-left: 5%;
+    width: 20%;
+}
+.answerBox{
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+}
+#answerBoxes{
+    overflow-y: auto;
+    border-top: 1px black solid;
+}
+.answerText{
+    width: 75%;
+    height: 100%;
+}
+.answerData{
+    width: 25%;
+    height: 100%;
+}
+.ansBy{
+    color: green;
+    margin-left: 25%;
+}
+.ansDate{
+    margin-left: 25%;
+}
+#ansButton{
+    display: block;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+.aError{
+    color: red;
+    display: none;
+}
+#tagPageTop{
+    width: 100%;
+    height: 20%;
+    display: flex;
+}
+#numTags{
+    margin-Left: 5%;
+}
+#allTags{
+    margin-Left: 30%;
+}
+#askQuestion3{
+    margin-left: 40%;
+    margin-top: 30px;
+}
+#tagArea{
+    width: 100%;
+    height: 70%;
+}
+.tagRow{
+    display: flex;
+    width: 90%;
+    height: 100px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+}
+.tagLinkBox{
+    border: black dashed;
+    width: 150px;
+    height: 100%;
+    margin-right: 150px;
+    text-align: center;
+}
+.tagLink{
+    color: blue;
+    text-decoration: underline;
+}
+.lError{
+    color: red;
+    display: none;
+}
+.sError{
+    color: red;
+    display: none;
+}
+.upvote{
+    width: 0;
+    height: 0;
+}
+.downvote{
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+.comment{
+    display: flex;
+    font-size: 14px;
+}
+.commentBox{
+    margin: 5px;
+    border: 1px black solid; 
+}
+.commentField{
+    width: 99.3%;
+}
+.cError{
+    color: red;
+    display: none;
+}
+
+
